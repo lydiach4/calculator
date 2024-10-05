@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div id="calculator">
+      <form>
+        <div>
+          <input type="text" id="screen" />
+        </div>
+        <div>
+          <input type="button" value="AC" id="clear"  />
+          <input type="button" value="/" onclick="showonscreen('/')" />
+          <input type="button" value="." onclick="showonscreen('.')" />
+        </div>
+        <div>
+          <input type="button" value="7" onclick="showonscreen('7')" />
+          <input type="button" value="8" onclick="showonscreen('8')" />
+          <input type="button" value="9" onclick="showonscreen('9')" />
+          <input type="button" value="*" onclick="showonscreen('*')" />
+        </div>
+        <div>
+          <input type="button" value="4" onclick="showonscreen('4')" />
+          <input type="button" value="5" onclick="showonscreen('5')" />
+          <input type="button" value="6" onclick="showonscreen('6')" />
+          <input type="button" value="-" onclick="showonscreen('-')" />
+        </div>
+        <div>
+          <input type="button" value="1" onclick="showonscreen('1')" />
+          <input type="button" value="2" onclick="showonscreen('2')" />
+          <input type="button" value="3" onclick="showonscreen('3')" />
+          <input type="button" value="+" onclick="showonscreen('+')" />
+        </div>
+        <div>
+          <input type="button" value="00" onclick="showonscreen('00')" />
+          <input type="button" value="0" onclick="showonscreen('0')" />
+          <input type="button" value="=" onclick="calculate()" id="calcule" />
+        </div>
+      </form>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
